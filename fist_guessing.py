@@ -32,11 +32,11 @@ while True:
             # case "num == 1":
                 print('computer wins')
                 break
-            if num == 3 and a<2:
+            elif num == 3 and a<2:
                 a+=1
                 y+=1
                 True
-            if num == 5 and a<4:
+            elif num == 5 and a<4:
                 a+=1
                 y+=1
                 True
@@ -46,7 +46,7 @@ while True:
                 if x<y:
                     print('computer wins')
                     break
-                if x>y:
+                elif x>y:
                     print('user wins')
                     break
         case ["s","p"]|["p","r"]|["r","s"]:
@@ -56,11 +56,11 @@ while True:
             # case "num == 1":
                 print('user wins')
                 break
-            if num == 3 and a<2:
+            elif num == 3 and a<2:
                 a+=1
                 x+=1
                 True
-            if num == 5 and a<4:
+            elif num == 5 and a<4:
                 a+=1
                 x+=1
                 True
@@ -70,7 +70,7 @@ while True:
                 if x<y:
                     print('computer wins')
                     break
-                if x>y:
+                elif x>y:
                     print('user wins')
                     break
                         # y+=1
