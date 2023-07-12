@@ -6,8 +6,8 @@ num = input()
 a = 0
 x = 0
 y = 0
-game = True
-while game:
+# game = True
+while True:
     print('Enter p/s/r:')
     user = input()
     option = ['p','s','r']
@@ -31,48 +31,48 @@ while game:
             # a+=1
             # case "num == 1":
                 print('computer wins')
-                game = False
+                break
             if num == 3 and a<2:
                 a+=1
                 y+=1
-                game
+                True
             if num == 5 and a<4:
                 a+=1
                 y+=1
-                game
+                True
             else:
                 # a+=1
                 y+=1
                 if x<y:
                     print('computer wins')
-                game = False
+                    break
                 if x>y:
                     print('user wins')
-                game = False
+                    break
         case ["s","p"]|["p","r"]|["r","s"]:
             if num == 1:
                         # y+=1
             # a+=1
             # case "num == 1":
                 print('user wins')
-                game = False
+                break
             if num == 3 and a<2:
                 a+=1
                 x+=1
-                game
+                True
             if num == 5 and a<4:
                 a+=1
                 x+=1
-                game
+                True
             else:
                 # a+=1
                 x+=1
                 if x<y:
                     print('computer wins')
-                    game = False
+                    break
                 if x>y:
                     print('user wins')
-                    game = False
+                    break
                         # y+=1
             # a+=1
             # # case "num == 1":
@@ -99,7 +99,7 @@ while game:
     #     a+=1
         case ["s","s"]|["r","r"]|["p","p"]:
             print("no one wins")
-            game
+            True
             # case "userA =='' and userB == 's' and num == 3":
         #     a+=1
         #     y+=1
