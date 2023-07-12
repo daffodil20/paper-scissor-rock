@@ -6,7 +6,8 @@ num = input()
 a = 0
 x = 0
 y = 0
-while True:
+game = True
+while game:
     print('Enter p/s/r:')
     user = input()
     option = ['p','s','r']
@@ -30,48 +31,48 @@ while True:
             # a+=1
             # case "num == 1":
                 print('computer wins')
-                False
+                game = False
             if num == 3 and a<2:
                 a+=1
                 y+=1
-                True
+                game
             if num == 5 and a<4:
                 a+=1
                 y+=1
-                True
+                game
             else:
                 # a+=1
                 y+=1
                 if x<y:
                     print('computer wins')
-                False
+                game = False
                 if x>y:
                     print('user wins')
-                False
+                game = False
         case ["s","p"]|["p","r"]|["r","s"]:
             if num == 1:
                         # y+=1
             # a+=1
             # case "num == 1":
                 print('user wins')
-                False
+                game = False
             if num == 3 and a<2:
                 a+=1
                 x+=1
-                True
+                game
             if num == 5 and a<4:
                 a+=1
                 x+=1
-                True
+                game
             else:
                 # a+=1
                 x+=1
                 if x<y:
                     print('computer wins')
-                False
+                    game = False
                 if x>y:
                     print('user wins')
-                False
+                    game = False
                         # y+=1
             # a+=1
             # # case "num == 1":
@@ -98,7 +99,7 @@ while True:
     #     a+=1
         case ["s","s"]|["r","r"]|["p","p"]:
             print("no one wins")
-            True
+            game
             # case "userA =='' and userB == 's' and num == 3":
         #     a+=1
         #     y+=1
